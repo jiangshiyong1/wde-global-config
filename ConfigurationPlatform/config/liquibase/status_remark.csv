@@ -1,0 +1,5 @@
+id;status;remark
+1;PROCESSING;配置中
+2;UNCONFIGURABLE;无法完成信源采集配置
+3;INVALID;信源入口失效
+4;INVALID;信源正则获取失败

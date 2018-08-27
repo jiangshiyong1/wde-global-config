@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity BoardBusinessLimit.
+    -->
+    <changeSet id="20171109053356-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="business_id"
+                                 baseTableName="board_business_limit"
+                                 constraintName="fk_board_business_limit_business_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="business"/>
+
+        <addForeignKeyConstraint baseColumnNames="add_user_id"
+                                 baseTableName="board_business_limit"
+                                 constraintName="fk_board_business_limit_add_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="board_id"
+                                 baseTableName="board_business_limit"
+                                 constraintName="fk_board_business_limit_board_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="board"/>
+
+    </changeSet>
+</databaseChangeLog>

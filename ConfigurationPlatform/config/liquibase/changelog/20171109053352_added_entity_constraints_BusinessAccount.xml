@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity BusinessAccount.
+    -->
+    <changeSet id="20171109053352-2" author="heguangfu">
+
+        <addForeignKeyConstraint baseColumnNames="business_id"
+                                 baseTableName="business_account"
+                                 constraintName="fk_business_account_business_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="business"/>
+
+        <addForeignKeyConstraint baseColumnNames="accounts_id"
+                                 baseTableName="business_account"
+                                 constraintName="fk_business_account_accounts_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="accounts"/>
+
+    </changeSet>
+</databaseChangeLog>

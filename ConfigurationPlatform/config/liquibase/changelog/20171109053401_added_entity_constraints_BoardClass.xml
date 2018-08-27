@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity BoardClass.
+    -->
+    <changeSet id="20171109053401-2" author="heguangfu">
+
+        <addForeignKeyConstraint baseColumnNames="parent_id"
+                                 baseTableName="board_class"
+                                 constraintName="fk_board_class_parent_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="board_class"/>
+
+    </changeSet>
+</databaseChangeLog>

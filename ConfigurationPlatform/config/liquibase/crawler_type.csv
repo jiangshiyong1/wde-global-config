@@ -1,0 +1,14 @@
+id;cn_name;name
+1;客户端采集器;AppGather
+2;论坛回帖采集器;BbsReplyGather
+3;论坛采集器;BbsGather
+4;博客采集器;BlogGather
+5;境外新闻采集器;JwNewsGather
+6;新闻评论采集器;NewsReplyGather
+7;境内新闻采集器;JnNewsGather
+8;微博消息采集器;WbMsgGather
+9;微博用户采集器;WbUserGather
+10;微信群发消息采集器;WxGroupMsgGather
+11;微信交互消息采集器;WxInterMsgGather
+12;微信用户采集器;WxUserGather
+13;电子报采集器;EnewsGather

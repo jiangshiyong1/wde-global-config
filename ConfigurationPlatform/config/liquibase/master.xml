@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053349_added_entity_Batch.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053350_added_entity_BatchClass.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053351_added_entity_BatchClassMap.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053352_added_entity_BusinessAccount.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053356_added_entity_BoardBusinessLimit.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053357_added_entity_BatchBoard.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053359_added_entity_CrawlerType.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053400_added_entity_Language.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053401_added_entity_BoardClass.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053402_added_entity_BoardClassMap.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053403_added_entity_SourceCluster.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053404_added_entity_Geo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053405_added_entity_Media.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053406_added_entity_SourceClusterClass.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053407_added_entity_SourceClusterClassMap.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053408_added_entity_Accounts.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053411_added_entity_Achivement.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053412_added_entity_UserGroup.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053413_added_entity_UserGroupInfo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053414_added_entity_StatusRemark.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171122090324_added_entity_BoardOnlineMetrix.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171206013017_added_entity_Code.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171206013018_added_entity_BoardCrawlerMetrix.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171212091059_added_entity_Board.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171206021228_added_entity_Business.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171222033334_added_entity_ValidHistory.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20171109053349_added_entity_constraints_Batch.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053350_added_entity_constraints_BatchClass.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053351_added_entity_constraints_BatchClassMap.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053352_added_entity_constraints_BusinessAccount.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053356_added_entity_constraints_BoardBusinessLimit.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053357_added_entity_constraints_BatchBoard.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053359_added_entity_constraints_CrawlerType.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053401_added_entity_constraints_BoardClass.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053402_added_entity_constraints_BoardClassMap.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053403_added_entity_constraints_SourceCluster.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053406_added_entity_constraints_SourceClusterClass.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053407_added_entity_constraints_SourceClusterClassMap.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053408_added_entity_constraints_Accounts.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053411_added_entity_constraints_Achivement.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053412_added_entity_constraints_UserGroup.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053413_added_entity_constraints_UserGroupInfo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171109053405_added_entity_constraints_Media.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171122090324_added_entity_constraints_BoardOnlineMetrix.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171206013018_added_entity_constraints_BoardCrawlerMetrix.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171212091059_added_entity_constraints_Board.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171206021228_added_entity_constraints_Business.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171222033334_added_entity_constraints_ValidHistory.xml" relativeToChangelogFile="false"/>
+
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+</databaseChangeLog>

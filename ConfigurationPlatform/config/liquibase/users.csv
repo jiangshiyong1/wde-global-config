@@ -1,0 +1,4 @@
+id;login;password_hash;first_name;last_name;email;image_url;activated;lang_key;created_by;last_modified_by;operator_id;expired_time
+1;system;$2a$10$mE.qmcV0mFU5NcKh73TZx.z4ueI/.bDWbj0T1BYyqP481kGGarKLG;System;System;system@localhost.com;;true;en;system;system;null;null
+2;anonymoususer;$2a$10$j8S5d7Sr7.8VTOYNviDPOeWX8KcYILUVJBsYV83Y5NtECayypx9lO;Anonymous;User;anonymous@localhost.com;;true;en;system;system;1;2017-12-30T11:11:11
+3;admin;$2a$10$cmHmFp5kWRvWOXRDOhcUku8P9pGhdUxLpj3j..iyjI.dhr8Q0i0vG;Administrator;Administrator;admin@localhost.com;;true;en;system;system;1;null
