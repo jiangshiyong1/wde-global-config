@@ -16,3 +16,10 @@ dtube=10.61.1.28:9876
 dt-web=10.61.1.28:12581
 nginx=10.61.1.28:80
 hadoop=10.61.1.28:8020
+
+# DNS
+10.61.1.27=host27.wde.com
+10.61.1.24=host24.wde.com
+10.61.1.28=host28.wde.com
+10.61.1.37=host37.wde.com
+10.61.2.129=host129.wde.com
