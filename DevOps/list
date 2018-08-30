@@ -1,7 +1,11 @@
 dockep-registry=10.61.1.27:5000
 gitlab=10.61.1.27:80
 mongodb=10.61.1.27:30000
+mongoUser=admin
+mongoPass=ictsoft
 mysql=10.61.1.28:3306
+mysqlUser=root
+mysqlPass=ictsoft
 redis-1=10.61.1.28:6391
 redis-2=10.61.1.28:6392
 redis-3=10.61.1.28:6393
