@@ -113,8 +113,8 @@ jhipster:
 
 application:
     excelBasePath: /tmp
-    cgi-server-news: http://10.61.1.37/cgi-bin/wde-ie-news-app-v/
-    cgi-server-bbs: http://10.61.1.37/cgi-bin/wde-ie-bbs-app-v/
+    cgi-server-news: http://localhost/cgi-bin/wde-ie-news-app-v/
+    cgi-server-bbs: http://localhost/cgi-bin/wde-ie-bbs-app-v/
 
 excel:
     board:
