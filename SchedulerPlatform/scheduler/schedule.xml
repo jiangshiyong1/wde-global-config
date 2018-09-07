@@ -31,7 +31,7 @@
         <IP>mysql.wde.ict.ac.cn</IP><Port>3306</Port>
         <User>wde</User><Password>wde1234.</Password>
       </SQL>
-      <DB>wde_monitor_wm</DB><Table>schedule_info</Table>
+      <DB>Monitor</DB><Table>schedule_info</Table>
       <NoticeSize>1000</NoticeSize>
   </TaskScheduleInfo>
 
@@ -43,7 +43,7 @@
         <User>wde</User>
         <Password>wde1234.</Password>
       </SQL>
-      <DB>wde_monitor_wm</DB><Table>schedule_task</Table>
+      <DB>Monitor</DB><Table>schedule_task</Table>
       <NoticeSize>1000</NoticeSize>
   </TaskInfo>
 
