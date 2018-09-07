@@ -1,0 +1,8 @@
+1.打标签
+# docker tag <Images:TAG>  10.61.1.27:81/wde/Images:TAG
+
+10.61.1.27:81   镜像仓库地址
+wde   wde是用项目名单独分的仓库目录
+
+2.上传
+# push 10.61.1.27:81/wde/Images:TAG
