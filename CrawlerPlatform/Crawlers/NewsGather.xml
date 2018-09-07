@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configure>
+    <GatherConf>
+        <SocketsOfBoardPage>20</SocketsOfBoardPage> <!--版块页面采集连接数-->
+        <SocketsOfDocPage>200</SocketsOfDocPage>    <!--帖子页面采集连接数-->
+        <ProxyType>2</ProxyType>                    <!--0: Http_Proxy 1: Socks4_Proxy 2: Socks5_Proxy -->
+        <ProxyAddr>121.52.218.105:6000</ProxyAddr>  <!--代理，格式IP:PORT，仅对需要使用代理采集的频道管用-->
+    </GatherConf>
+    <StorageConf>
+        <OutputCharset>UTF-8</OutputCharset>
+        <MaxFileSize>64</MaxFileSize>     <!--结果文件最大大小-->
+        <SaveTimeout>60</SaveTimeout>     <!--多长时间创建一组新的结果文件，单位为分钟-->
+        <DaysLimit>0</DaysLimit>          <!--只保存多少天内发布的网页，若为0则不判定，缺省为30-->
+        <contentSize>100</contentSize>    <!--只保存正文字节大于size的网页，缺省为100-->
+        <contentLog>0</contentLog>        <!--正文字节小于size的网页是否记入日志，为1则打印日志，0则不打印。缺省为1-->
+        <LocalSave>1</LocalSave>          <!--采集结果是否保存至本地，若为0则不保存，1保存-->
+        <IntoDB>1</IntoDB>                <!--采集结果是否入库，若为0则不入库，1入库-->
+        <AppDocIOJarDir>.</AppDocIOJarDir>
+        <AppDocIOCfgPath>./AppDocIOCfg.xml</AppDocIOCfgPath>
+    </StorageConf>
+    <JsEngineConf> <!--JS引擎配置-->
+        <MozProfilePath>/tmp</MozProfilePath>  <!--mozilla缓存路径，注意必须是绝对路径，WINDOWS下要用反斜线-->
+        <JSServerAddr>192.168.2.28:5505</JSServerAddr><!--JS解析服务器地址，格式IP:PORT,仅对需要使用js采集的版块管用-->
+    </JsEngineConf>
+    <RunConf>      <!--运行控制-->
+        <RunningMinutes>0</RunningMinutes> <!--持续运行时间，为0时表示永久运行-->
+        <TimeoutAction>1</TimeoutAction>   <!--达到运行周期后的行为：0为自动重启，1为退出-->
+        <LoopRun>0</LoopRun>               <!--是否循环采集-->
+    </RunConf>
+    <bfdServer>
+        <Enable>0</Enable> <!--是否进行全局查重，1为进行全局查重，0为本地查重-->
+        <bfdIP>10.61.1.29</bfdIP> <!--全局查重服务器IP-->
+        <bfdPort>12345</bfdPort>  <!--全局查重服务器端口-->
+        <bfdTable>wde.cc_news</bfdTable> <!--全局查重库表,格式: db.table-->
+        <bfdAuthEnable>1</bfdAuthEnable>   <!-- 是否启用登录认证 -->
+        <bfdAuthUsername>wde</bfdAuthUsername>
+        <bfdAuthPassword>ict.soft</bfdAuthPassword>
+    </bfdServer>
+    <BoardRevise>
+        <Enable>0</Enable>
+        <ConfPath>./BoardRevise.xml</ConfPath>
+    </BoardRevise>
+    <NameClient>
+        <IsClient>0</IsClient>      <!--是否进行NameClient连接，1为是，0为否，则没有命名实体数据-->
+        <ServerList>10.61.2.129:9090</ServerList> <!--NameClient 连接服务器-->
+    </NameClient>
+    <UrlCheckVersion>2</UrlCheckVersion>
+</Configure>
