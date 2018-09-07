@@ -1,8 +1,16 @@
-1.打标签
+1.修改docker配置
+# grep "ExecStart" /lib/systemd/system/docker.service
+ExecStart=/usr/bin/dockerd --insecure-registry 10.61.1.27:81
+
+需要指定私有库的地址，添加内容为：--insecure-registry 10.61.1.27:81
+
+
+2.打标签
 # docker tag <Images:TAG>  10.61.1.27:81/wde/Images:TAG
 
 10.61.1.27:81   镜像仓库地址
 wde   wde是用项目名单独分的仓库目录
+
 
 2.上传
 # push 10.61.1.27:81/wde/Images:TAG
