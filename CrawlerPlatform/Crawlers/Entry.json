@@ -1,0 +1,8 @@
+{
+   "CfgDBHost": "mysql.wde.ict.ac.cn",
+   "CfgDBPort": 3306,
+   "CfgDBName": "wde_monitor_wm",
+   "CfgDBUsername": "wde",
+   "CfgDBPassword": "wde1234.",
+   "CfgDBEncoding": "utf8"
+}

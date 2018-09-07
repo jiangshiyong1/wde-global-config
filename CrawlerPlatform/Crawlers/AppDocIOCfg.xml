@@ -1,0 +1,11 @@
+<writer>
+    <type>0</type><!--0:DT;1:Inner-->
+    <config><!--config内容因type不同而不同-->
+        <topic>NewsTmp</topic>
+        <producer>WDE_ODS_TEST_ProducerGroup_News</producer>
+        <name_server>dtube.wde.ict.ac.cn:9876</name_server>
+        <zk_path>zk://172.22.0.24:2181/test</zk_path>
+        <type>news</type>
+        <save_dir>./save</save_dir>
+    </config>
+</writer>

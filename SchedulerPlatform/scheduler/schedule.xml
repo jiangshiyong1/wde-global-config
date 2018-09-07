@@ -13,13 +13,13 @@
       </Queue>
       <!--调度器启动、注册-->
       <ScheduleInfo>
-        <ZkHost>10.61.2.129:2181</ZkHost>
+        <ZkHost>zookeeper.wde.ict.ac.cn:2181</ZkHost>
         <ZkRoot>/NEW_WDE</ZkRoot>
         <StartPort>23243</StartPort>
       </ScheduleInfo>
        <!--定时触发表达式解析策略-->
       <TriggerResolve>
-        <Host>10.61.1.24</Host>
+        <Host>127.0.0.1</Host>
         <Port>19050</Port>
       </TriggerResolve>
     </Strategy>
@@ -28,8 +28,8 @@
   <!--调度信息库表配置-->
   <TaskScheduleInfo>
       <SQL>
-        <IP>10.61.1.24</IP><Port>3306</Port>
-        <User>wde</User><Password>ictsoft</Password>
+        <IP>mysql.wde.ict.ac.cn</IP><Port>3306</Port>
+        <User>wde</User><Password>wde1234.</Password>
       </SQL>
       <DB>wde_monitor_wm</DB><Table>schedule_info</Table>
       <NoticeSize>1000</NoticeSize>
@@ -38,10 +38,10 @@
   <!-- 任务表配置 -->
   <TaskInfo FlushFreq="30">
       <SQL>
-        <IP>10.61.1.24</IP>
+        <IP>mysql.wde.ict.ac.cn</IP>
         <Port>3306</Port>
         <User>wde</User>
-        <Password>ictsoft</Password>
+        <Password>wde1234.</Password>
       </SQL>
       <DB>wde_monitor_wm</DB><Table>schedule_task</Table>
       <NoticeSize>1000</NoticeSize>
@@ -49,7 +49,7 @@
 
   <!--采集节点遍历配置-->
   <ServerInfo FlushFreq="30">
-    <ZkHost>10.61.2.129:2181</ZkHost>
+    <ZkHost>zookeeper.wde.ict.ac.cn:2181</ZkHost>
     <ZkRoot>/NEW_WDE</ZkRoot>
   </ServerInfo>
 </Scheduler>
