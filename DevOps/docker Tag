@@ -6,6 +6,7 @@ ExecStart=/usr/bin/dockerd --insecure-registry 10.61.1.27:81     //此处需要�
 # grep "DOCKER_OPTS"  /etc/sysconfig/docker  （centos6系统）
 DOCKER_OPTS="--insecure-registry 10.61.1.27:81"
 
+
 2.打标签
 # docker tag <Images:TAG>  10.61.1.27:81/wde/Images:TAG
 
