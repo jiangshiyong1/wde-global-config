@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UploadConfig>
+
+    <ZkIPPort>zookeeper.wde.ict.ac.cn:2181</ZkIPPort>
+    <ZkRoot>/NEW_WDE</ZkRoot>
+
+    <Programs>
+        <Program>
+            <SourceMedia>news</SourceMedia>
+            <ProgramName>newsGather</ProgramName>
+            <Version>1.0.0</Version>
+            <CompressType>tar.gz</CompressType>
+            <CompressFile>gathers/newsGather-1.0.0.tar.gz</CompressFile>
+            <ProgramType>1</ProgramType>
+            <GatherType>7</GatherType>
+            <ScriptName>newsGather.sh</ScriptName>
+        </Program>
+
+        <Program>
+            <SourceMedia>blog</SourceMedia>
+            <ProgramName>blogGather</ProgramName>
+            <Version>1.0.0</Version>
+            <CompressType>tar.gz</CompressType>
+            <CompressFile>gathers/blogGather-1.0.0.tar.gz</CompressFile>
+            <ProgramType>1</ProgramType>
+            <GatherType>4</GatherType>
+            <ScriptName>blogGather.sh</ScriptName>
+        </Program>
+    </Programs>
+
+</UploadConfig>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ChannelConfig>
+
+    <ZkHost>zookeeper.wde.ict.ac.cn:2181</ZkHost>
+    <ZkRoot>/NEW_WDE</ZkRoot>
+
+    <Pairs>
+        <Pair>
+            <Path>/Config</Path>
+            <Value></Value>
+        </Pair>
+        <Pair>
+            <Path>/Config/Program</Path>
+            <Value></Value>
+        </Pair>
+        <Pair>
+            <Path>/Config/Program/NodeDaemon</Path>
+            <Value>{"port":"9050","ThreadNumber":"8","UpdatePeriod":"10","RecyclePeriod":"3600"}</Value>
+        </Pair>
+        <Pair>
+            <Path>/Config/Storage</Path>
+            <Value></Value>
+        </Pair>
+        <Pair>
+            <Path>/Config/Storage/RemoteStorage</Path>
+            <Value>{"HDFS":{"ip":"10.61.2.129","port":"9000"}}</Value>
+        </Pair>
+        <Pair>
+            <Path>/Config/Storage/StorageManage</Path>
+            <Value>{"Program":"HDFS","Config":"HDFS","IndexDocument":"HDFS","UpdateDocument":"HDFS"}</Value>
+        </Pair>
+        <Pair>
+            <Path>/Config/ZookeeperClient</Path>
+            <Value>{"timeout":"10"}</Value>
+        </Pair>
+        <Pair>
+            <Path>/Bin</Path>
+            <Value></Value>
+        </Pair>
+        <Pair>
+            <Path>/Bin/NodeDaemon</Path>
+            <Value></Value>
+        </Pair>
+        <Pair>
+            <Path>/Bin/Scheduler</Path>
+            <Value></Value>
+        </Pair>
+        <Pair>
+            <Path>/Bin/GatherConfig</Path>
+            <Value></Value>
+        </Pair>
+
+        <Pair>
+            <Path>/System</Path>
+            <Value></Value>
+        </Pair>
+        <Pair>
+            <Path>/System/NodeDaemon</Path>
+            <Value></Value>
+        </Pair>
+        <Pair>
+            <Path>/System/GatherResource</Path>
+            <Value></Value>
+        </Pair>
+    </Pairs>
+</ChannelConfig>
