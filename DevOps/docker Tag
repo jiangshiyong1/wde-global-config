@@ -22,8 +22,10 @@ Email:          //可为空
 WARNING: login credentials saved in /root/.docker/config.json
 Login Succeeded
 
-# docker logout 10.61.1.27:81   //退出登陆，需要切换账户时操作。
-
 # push 10.61.1.27:81/wde/Images:TAG  //上传镜像。
 
+4.私有库的前端地址
 
+浏览器访问：http://10.61.1.27:81
+用户名：wde
+密码：Ictsoft123.
