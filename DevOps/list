@@ -1,4 +1,6 @@
 dockep-registry=10.61.1.27:81
+docker-registry-web=10.61.1.27:81
+user/passwd=wde/
 gitlab=10.61.1.27:80
 mongodb=10.61.1.27:30000
 mongoUser=admin
