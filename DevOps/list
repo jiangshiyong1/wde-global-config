@@ -26,9 +26,9 @@ hadoop=10.61.1.28:8020
 # DNS
 mysql.wde.ict.ac.cn=10.61.1.28:3306
 git.wde.ict.ac.cn=10.61.1.27
-configuration.wde.ict.ac.cn=
-scheduler.wde.ict.ac.cn=
-monitor.wde.ict.ac.cn=
+configuration.wde.ict.ac.cn=10.61.1.27:8080
+scheduler.wde.ict.ac.cn=10.61.1.27
+monitor.wde.ict.ac.cn=10.61.1.27:9000
 mongo.wde.ict.ac.cn=10.61.1.27:30000
 zookeeper.wde.ict.ac.cn=10.61.1.28:2181
 dtube.wde.ict.ac.cn=10.61.1.28:9876
