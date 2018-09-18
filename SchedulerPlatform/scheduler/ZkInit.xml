@@ -23,7 +23,7 @@
         </Pair>
         <Pair>
             <Path>/Config/Storage/RemoteStorage</Path>
-            <Value>{"HDFS":{"ip":"10.61.2.129","port":"9000"}}</Value>
+            <Value>{"HDFS":{"ip":"hdfs.wde.ict.ac.cn","port":"8082"}}</Value>
         </Pair>
         <Pair>
             <Path>/Config/Storage/StorageManage</Path>
