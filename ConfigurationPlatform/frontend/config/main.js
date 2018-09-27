@@ -22,7 +22,7 @@ Vue.use(config)
 
 Vue.config.productionTip = false
 
-axios.defaults.baseURL = 'http://configuration.wde.ict.ac.cn:8008/api'   // 生产
+axios.defaults.baseURL = 'http://10.61.1.27:8008/api'   // 生产
 Vue.prototype.axios = axios
 /* eslint-disable no-new */
 new Vue({
