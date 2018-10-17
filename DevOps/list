@@ -23,6 +23,15 @@ dt-web=10.61.1.28:12581
 nginx=10.61.1.28:80
 hadoop=10.61.1.28:8020
 
+
+#SSH
+10.61.1.24	root	bd4jrz9/
+10.61.1.28	root	ictsoft
+10.61.1.37	xwde	xwde
+10.61.1.27	root	I9jkX@vQ2h
+
+
+
 # DNS
 mysql.wde.ict.ac.cn=10.61.1.28
 git.wde.ict.ac.cn=10.61.1.27
@@ -37,4 +46,5 @@ bbs.monitor.redis.wde.ict.ac.cn=10.61.1.27
 blog.monitor.redis.wde.ict.ac.cn=10.61.1.27
 news.monitor.redis.wde.ict.ac.cn=10.61.1.27
 hdfs.wde.ict.ac.cn=10.61.1.28
+
 
