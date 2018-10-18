@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configure>
+		<SocketsOfBoardPage>20</SocketsOfBoardPage> <!--版块页面采集连接数-->
+		<SocketsOfDocPage>200</SocketsOfDocPage> <!--帖子页面采集连接数-->
+		<ProxyType>2</ProxyType> <!--0: Http_Proxy 1: Socks4_Proxy 2: Socks5_Proxy -->
+		<ProxyAddr>10.136.35.201:7011</ProxyAddr> <!--代理，格式IP:PORT，仅对需要使用代理采集的版块管用-->
+		<OutputCharset>UTF-8</OutputCharset>
+		<JSServerAddr>192.168.2.28:5505</JSServerAddr><!--JS解析服务器地址，格式IP:PORT,仅对需要使用js采集的版块管用-->
+		<RunningMinutes>0</RunningMinutes> <!--持续运行时间，为0时表示永久运行-->
+		<TimeoutAction>1</TimeoutAction> <!--达到运行周期后的行为：0为自动重启，1为退出-->
+		<LoopRun>0</LoopRun> <!--是否循环采集-->
+		<DaysLimit>60</DaysLimit> <!--只保存多少天内发布的网页，若为0则不判定，缺省为30-->
+		<contentSize>0</contentSize> <!--只保存正文字节大于size的网页，缺省为100-->
+		<contentLog>1</contentLog> <!--正文字节小于size的网页是否记入日志，为1则打印日志，0则不打印。缺省为1-->
+		<LocalSave>0</LocalSave> <!--采集结果是否保存至本地，若为0则不保存，1保存-->
+		<IntoDB>1</IntoDB>  <!--采集结果是否入库，若为0则不入库，1入库-->
+		<Enable>1</Enable> <!--是否进行全局查重，1为进行全局查重，0为本地查重-->
+		<Authorize>1</Authorize><!--是否进行权限验证，1为进行权限验证，0为不进行验证-->
+		<AuthorizeUser>wde</AuthorizeUser><!--权限验证用户名信息-->
+		<AuthorizePassword>ictsoft</AuthorizePassword><!--权限验证密码信息-->
+		<UrlCheckVersion>2</UrlCheckVersion><!--使用的全局查重库表版本，1,GXB; 2,WDE-->
+		<bfdIP>10.60.1.146</bfdIP> <!--全局查重服务器IP，此处用本地作为例子-->
+		<bfdPort>27017</bfdPort> <!--全局查重服务器端口-->
+		<bfdTable>wde.cc_bbs</bfdTable> <!--全局查重库表名,格式 db.table-->
+		<IsPostStatusServer>0</IsPostStatusServer><!--是否使用跟帖状态服务器，1为使用，0为不使用-->
+		<PostStatusServerIP>10.20.8.35</PostStatusServerIP><!--跟帖状态服务器IP-->
+		<PostStatusServerPort>6066</PostStatusServerPort><!--跟帖状态服务器Port-->
+		<PostQueueName>yqpt_bbs_reply_tmp</PostQueueName>
+		<PostTable>wde.cc_poststatus</PostTable><!--跟帖状态库表名,格式 db.table-->
+		<IsClient>0</IsClient> <!--是否进行NameClient连接，1为是，0为否，则没有命名实体数据-->
+		<ServerList>10.61.1.29:9090</ServerList> <!--Nameclient服务器地址，格式 IP:port,多个服务器使用,分割-->
+		<post_class_tag>m102,m102_110</post_class_tag><!--跟帖分类标签-->
+        <jarDir>./appio</jarDir>
+</Configure>
+

@@ -1,0 +1,31 @@
+1.修改docker配置
+
+# grep "ExecStart" /lib/systemd/system/docker.service  （cento7系统）
+ExecStart=/usr/bin/dockerd --insecure-registry 10.61.1.27:81     //此处需要指定私有库的地址，添加内容为：--insecure-registry 10.61.1.27:81  
+
+# grep "DOCKER_OPTS"  /etc/sysconfig/docker  （centos6系统）
+DOCKER_OPTS="--insecure-registry 10.61.1.27:81"
+
+
+2.打标签
+# docker tag <Images:TAG>  10.61.1.27:81/wde/Images:TAG
+
+10.61.1.27:81   镜像仓库地址。
+wde   wde是用项目名单独分的仓库目录。
+
+
+3.上传
+# docker login 10.61.1.27:81   //首先登陆到私有库，只需验证一次，windows可能有差异。
+Username: wde   //用户名：wde
+Password:       //密码：Ictsoft123.       
+Email:          //可为空
+WARNING: login credentials saved in /root/.docker/config.json
+Login Succeeded
+
+# push 10.61.1.27:81/wde/Images:TAG  //上传镜像。
+
+4.私有库的前端地址
+
+浏览器访问：http://10.61.1.27:81
+用户名：wde
+密码：Ictsoft123.

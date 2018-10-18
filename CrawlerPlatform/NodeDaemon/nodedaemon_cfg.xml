@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Config>
-    <ZkHost>10.61.2.129:2181</ZkHost>
+    <ZkHost>zookeeper.wde.ict.ac.cn:2181</ZkHost>
     <ZkRoot>/NEW_WDE</ZkRoot>
     <!--存放支持的采集配置信息-->
     <GatherConfig>{"gather_config": [{"gather_type": 3,"gather_name": "ForumGather"},{"gather_type": 4,"gather_name": "BlogGather"},{"gather_type": 7,"gather_name": "JnNewsGather"}],"max_gather_count":"40"}</GatherConfig>
     <!--配置调度信息表-->
-    <ScheduleInfo>{"DBHost": "10.61.1.24", "DBPort": 3306, "DBName": "wde_monitor_wm","DBUserName": "wde","DBPassword": "ictsoft","DBEncoding": "utf8"}</ScheduleInfo>
+    <ScheduleInfo>{"DBHost": "mysql.wde.ict.ac.cn", "DBPort": 3306, "DBName": "Monitor","DBUserName": "wde","DBPassword": "wde1234.","DBEncoding": "utf8"}</ScheduleInfo>
 </Config>
